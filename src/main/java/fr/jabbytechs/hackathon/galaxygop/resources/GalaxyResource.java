@@ -44,6 +44,7 @@ public class GalaxyResource {
 		Response response = new Response(fleets,null);
 
 		// Create an answer here...
+		System.out.println(gson.toJson(response));
 		return gson.toJson(response);
 	}	
 }
