@@ -34,12 +34,12 @@ public class GalaxyResource {
 
 		//create Response
 		List<FleetRetour> fleets = new ArrayList<>();
-		fleets.add(new FleetRetour(1,
+		fleets.add(new FleetRetour(5,
 				galaxy.getPlanets().stream()
 						.filter(planet -> planet.getId() == 1)
 						.collect(Collectors.toList()).get(0).getId(),
 				galaxy.getPlanets().stream()
-						.filter(planet -> planet.getId() == 2)
+						.filter(planet -> planet.getId() == 0)
 						.collect(Collectors.toList()).get(0).getId()));
 		Response response = new Response(fleets,null);
 
